@@ -1,0 +1,3 @@
+include ':app', ':qrcode'
+include ':crosswalkArm'
+include ':crosswalkX86'

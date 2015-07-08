@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+    <item
+        android:id="@+id/action_account"
+        android:title="我的户口"
+        android:icon="@drawable/ic_action_account_box"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_share"
+        android:title="分享"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_qr"
+        android:title="分享二维码"
+        android:icon="@drawable/ic_action_qrcode"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="退出"
+        android:icon="@drawable/ic_action_logout"
+        app:showAsAction="never" />
+</menu>

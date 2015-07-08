@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">郑州大商新玛特金博大店</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_option">OptionActivity</string>
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+
+
+    <string name="error_invalid_password">密码最少6个字，最少一个字母，最少一个数字</string>
+    <string name="error_incorrect_password">密码错误</string>
+    <string name="error_field_required">必填栏</string>
+    <string name="error_match_password">密码不吻合</string>
+    <string name="login_fail">操作失败，请稍后再尝试</string>
+    <string name="login">登入</string>
+
+    <string name="ok">确定</string>
+
+    <string name="no_internet">没有网络</string>
+    <string-array name="network_options">
+
+        <item>打开wifi设置</item>
+        <item>打开网络设置</item>
+        <item>关闭程序</item>
+    </string-array>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_qq">QQActivity</string>
+    <string name="title_activity_scan">ScanActivity</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_park">ParkActivity</string>
+    <string name="title_activity_qr">QrActivity</string>
+    <string name="title_activity_account">AccountActivity</string>
+    <string name="title_activity_qr_choice">QrChoiceActivity</string>
+    <string name="title_activity_connect_qq">ConnectQQActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+</resources>

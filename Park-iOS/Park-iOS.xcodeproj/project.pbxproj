@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D2184051B160A8100CC9165 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2184041B160A8100CC9165 /* AccountTableViewCell.swift */; };
+		6D7414E21B07B0400053AB01 /* QRCodeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7414E11B07B0400053AB01 /* QRCodeTableViewController.swift */; };
+		6D74152D1B07C3310053AB01 /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74152A1B07C3310053AB01 /* CIColorExtension.swift */; };
+		6D74152E1B07C3310053AB01 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74152B1B07C3310053AB01 /* QRCode.swift */; };
+		6D74152F1B07C3310053AB01 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D74152C1B07C3310053AB01 /* UIImageViewExtension.swift */; };
+		6D7415311B08B7EA0053AB01 /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7415301B08B7EA0053AB01 /* AccountTableViewController.swift */; };
+		6D92B3E81B2742CB006F1BD6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92B3E71B2742CB006F1BD6 /* SystemConfiguration.framework */; };
+		6D92B3EA1B2742E4006F1BD6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92B3E91B2742E4006F1BD6 /* libz.dylib */; };
+		6D92B3EC1B2742F4006F1BD6 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92B3EB1B2742F4006F1BD6 /* libsqlite3.0.dylib */; };
+		6D92B3F11B27540D006F1BD6 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92B3EE1B27540D006F1BD6 /* libWeChatSDK.a */; };
+		6D92B3F31B2759D7006F1BD6 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D92B3F21B2759D7006F1BD6 /* libc++.dylib */; };
+		6DBCC9EB1AFB3C87008CA17A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCC9EA1AFB3C87008CA17A /* AppDelegate.swift */; };
+		6DBCC9EE1AFB3C87008CA17A /* Park_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCC9EC1AFB3C87008CA17A /* Park_iOS.xcdatamodeld */; };
+		6DBCC9F01AFB3C87008CA17A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCC9EF1AFB3C87008CA17A /* ViewController.swift */; };
+		6DBCC9F31AFB3C87008CA17A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBCC9F11AFB3C87008CA17A /* Main.storyboard */; };
+		6DBCC9F51AFB3C87008CA17A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBCC9F41AFB3C87008CA17A /* Images.xcassets */; };
+		6DBCC9F81AFB3C87008CA17A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DBCC9F61AFB3C87008CA17A /* LaunchScreen.xib */; };
+		6DBCCA041AFB3C87008CA17A /* Park_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA031AFB3C87008CA17A /* Park_iOSTests.swift */; };
+		6DBCCA0E1AFB5D22008CA17A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA0D1AFB5D22008CA17A /* LoginViewController.swift */; };
+		6DBCCA101AFB9FE5008CA17A /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA0F1AFB9FE5008CA17A /* OptionViewController.swift */; };
+		6DBCCA161AFBA00D008CA17A /* QRCodeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA121AFBA00D008CA17A /* QRCodeReader.swift */; };
+		6DBCCA171AFBA00D008CA17A /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA131AFBA00D008CA17A /* QRCodeViewController.swift */; };
+		6DBCCA181AFBA00D008CA17A /* ReaderOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA141AFBA00D008CA17A /* ReaderOverlayView.swift */; };
+		6DBCCA191AFBA00D008CA17A /* SwitchCameraButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA151AFBA00D008CA17A /* SwitchCameraButton.swift */; };
+		6DBCCA4F1AFBA546008CA17A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DBCCA4E1AFBA546008CA17A /* MainViewController.swift */; };
+		6DD8DCDE1B048BDD003C8DDA /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8DCDD1B048BDC003C8DDA /* HRToast+UIView.swift */; };
+		6DD8DCE01B049400003C8DDA /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8DCDF1B049400003C8DDA /* StringHelper.swift */; };
+		6DD8DCE41B0512DE003C8DDA /* QQLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8DCE31B0512DE003C8DDA /* QQLoginViewController.swift */; };
+		6DE197381AFD384E0082B825 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 6DE197371AFD384E0082B825 /* assets */; };
+		6DE1973A1AFE2CB20082B825 /* ParkOKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE197391AFE2CB20082B825 /* ParkOKViewController.swift */; };
+		6DE1973C1AFEEE840082B825 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE1973B1AFEEE840082B825 /* ContactViewController.swift */; };
+		6DE1973E1AFF334E0082B825 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE1973D1AFF334E0082B825 /* RegisterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DBCC9FE1AFB3C87008CA17A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DBCC9DD1AFB3C87008CA17A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DBCC9E41AFB3C87008CA17A;
+			remoteInfo = "Park-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D7415181B07BA5B0053AB01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D2184041B160A8100CC9165 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		6D7414E11B07B0400053AB01 /* QRCodeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeTableViewController.swift; sourceTree = "<group>"; };
+		6D74152A1B07C3310053AB01 /* CIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CIColorExtension.swift; sourceTree = "<group>"; };
+		6D74152B1B07C3310053AB01 /* QRCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		6D74152C1B07C3310053AB01 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		6D7415301B08B7EA0053AB01 /* AccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		6D92B3E71B2742CB006F1BD6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		6D92B3E91B2742E4006F1BD6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		6D92B3EB1B2742F4006F1BD6 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		6D92B3ED1B2743A4006F1BD6 /* Park-iOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Park-iOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D92B3EE1B27540D006F1BD6 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		6D92B3EF1B27540D006F1BD6 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		6D92B3F01B27540D006F1BD6 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		6D92B3F21B2759D7006F1BD6 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		6DBCC9E51AFB3C87008CA17A /* 停车场.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "停车场.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBCC9E91AFB3C87008CA17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBCC9EA1AFB3C87008CA17A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DBCC9ED1AFB3C87008CA17A /* Park_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Park_iOS.xcdatamodel; sourceTree = "<group>"; };
+		6DBCC9EF1AFB3C87008CA17A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6DBCC9F21AFB3C87008CA17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DBCC9F41AFB3C87008CA17A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6DBCC9F71AFB3C87008CA17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6DBCC9FD1AFB3C87008CA17A /* Park-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Park-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DBCCA021AFB3C87008CA17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DBCCA031AFB3C87008CA17A /* Park_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Park_iOSTests.swift; sourceTree = "<group>"; };
+		6DBCCA0D1AFB5D22008CA17A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6DBCCA0F1AFB9FE5008CA17A /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
+		6DBCCA121AFBA00D008CA17A /* QRCodeReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeReader.swift; sourceTree = "<group>"; };
+		6DBCCA131AFBA00D008CA17A /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		6DBCCA141AFBA00D008CA17A /* ReaderOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderOverlayView.swift; sourceTree = "<group>"; };
+		6DBCCA151AFBA00D008CA17A /* SwitchCameraButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCameraButton.swift; sourceTree = "<group>"; };
+		6DBCCA4E1AFBA546008CA17A /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6DD8DCDD1B048BDC003C8DDA /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		6DD8DCDF1B049400003C8DDA /* StringHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		6DD8DCE31B0512DE003C8DDA /* QQLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QQLoginViewController.swift; sourceTree = "<group>"; };
+		6DE197371AFD384E0082B825 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
+		6DE197391AFE2CB20082B825 /* ParkOKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkOKViewController.swift; sourceTree = "<group>"; };
+		6DE1973B1AFEEE840082B825 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		6DE1973D1AFF334E0082B825 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DBCC9E21AFB3C87008CA17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D92B3F31B2759D7006F1BD6 /* libc++.dylib in Frameworks */,
+				6D92B3EC1B2742F4006F1BD6 /* libsqlite3.0.dylib in Frameworks */,
+				6D92B3EA1B2742E4006F1BD6 /* libz.dylib in Frameworks */,
+				6D92B3F11B27540D006F1BD6 /* libWeChatSDK.a in Frameworks */,
+				6D92B3E81B2742CB006F1BD6 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBCC9FA1AFB3C87008CA17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D92B3DF1B2740BE006F1BD6 /* WeChart */ = {
+			isa = PBXGroup;
+			children = (
+				6D92B3EE1B27540D006F1BD6 /* libWeChatSDK.a */,
+				6D92B3EF1B27540D006F1BD6 /* WXApi.h */,
+				6D92B3F01B27540D006F1BD6 /* WXApiObject.h */,
+			);
+			name = WeChart;
+			sourceTree = "<group>";
+		};
+		6D92B3E61B2742AE006F1BD6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D92B3F21B2759D7006F1BD6 /* libc++.dylib */,
+				6D92B3EB1B2742F4006F1BD6 /* libsqlite3.0.dylib */,
+				6D92B3E91B2742E4006F1BD6 /* libz.dylib */,
+				6D92B3E71B2742CB006F1BD6 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DBCC9DC1AFB3C87008CA17A = {
+			isa = PBXGroup;
+			children = (
+				6D92B3ED1B2743A4006F1BD6 /* Park-iOS-Bridging-Header.h */,
+				6D92B3E61B2742AE006F1BD6 /* Frameworks */,
+				6D92B3DF1B2740BE006F1BD6 /* WeChart */,
+				6DD8DCDF1B049400003C8DDA /* StringHelper.swift */,
+				6DE197371AFD384E0082B825 /* assets */,
+				6DBCCA111AFBA00D008CA17A /* QRCodeReader */,
+				6DBCC9E71AFB3C87008CA17A /* Park-iOS */,
+				6DBCCA001AFB3C87008CA17A /* Park-iOSTests */,
+				6DBCC9E61AFB3C87008CA17A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DBCC9E61AFB3C87008CA17A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCC9E51AFB3C87008CA17A /* 停车场.app */,
+				6DBCC9FD1AFB3C87008CA17A /* Park-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DBCC9E71AFB3C87008CA17A /* Park-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6D74152A1B07C3310053AB01 /* CIColorExtension.swift */,
+				6D74152B1B07C3310053AB01 /* QRCode.swift */,
+				6D74152C1B07C3310053AB01 /* UIImageViewExtension.swift */,
+				6DD8DCDD1B048BDC003C8DDA /* HRToast+UIView.swift */,
+				6DBCCA4E1AFBA546008CA17A /* MainViewController.swift */,
+				6DBCCA0F1AFB9FE5008CA17A /* OptionViewController.swift */,
+				6DBCC9EA1AFB3C87008CA17A /* AppDelegate.swift */,
+				6DBCC9EF1AFB3C87008CA17A /* ViewController.swift */,
+				6DBCC9F11AFB3C87008CA17A /* Main.storyboard */,
+				6DBCC9F41AFB3C87008CA17A /* Images.xcassets */,
+				6DBCC9F61AFB3C87008CA17A /* LaunchScreen.xib */,
+				6DBCC9EC1AFB3C87008CA17A /* Park_iOS.xcdatamodeld */,
+				6DBCC9E81AFB3C87008CA17A /* Supporting Files */,
+				6DBCCA0D1AFB5D22008CA17A /* LoginViewController.swift */,
+				6DE197391AFE2CB20082B825 /* ParkOKViewController.swift */,
+				6DE1973B1AFEEE840082B825 /* ContactViewController.swift */,
+				6DE1973D1AFF334E0082B825 /* RegisterViewController.swift */,
+				6DD8DCE31B0512DE003C8DDA /* QQLoginViewController.swift */,
+				6D7414E11B07B0400053AB01 /* QRCodeTableViewController.swift */,
+				6D7415301B08B7EA0053AB01 /* AccountTableViewController.swift */,
+				6D2184041B160A8100CC9165 /* AccountTableViewCell.swift */,
+			);
+			path = "Park-iOS";
+			sourceTree = "<group>";
+		};
+		6DBCC9E81AFB3C87008CA17A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCC9E91AFB3C87008CA17A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DBCCA001AFB3C87008CA17A /* Park-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCCA031AFB3C87008CA17A /* Park_iOSTests.swift */,
+				6DBCCA011AFB3C87008CA17A /* Supporting Files */,
+			);
+			path = "Park-iOSTests";
+			sourceTree = "<group>";
+		};
+		6DBCCA011AFB3C87008CA17A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCCA021AFB3C87008CA17A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DBCCA111AFBA00D008CA17A /* QRCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				6DBCCA121AFBA00D008CA17A /* QRCodeReader.swift */,
+				6DBCCA131AFBA00D008CA17A /* QRCodeViewController.swift */,
+				6DBCCA141AFBA00D008CA17A /* ReaderOverlayView.swift */,
+				6DBCCA151AFBA00D008CA17A /* SwitchCameraButton.swift */,
+			);
+			path = QRCodeReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DBCC9E41AFB3C87008CA17A /* Park-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBCCA071AFB3C87008CA17A /* Build configuration list for PBXNativeTarget "Park-iOS" */;
+			buildPhases = (
+				6DBCC9E11AFB3C87008CA17A /* Sources */,
+				6DBCC9E21AFB3C87008CA17A /* Frameworks */,
+				6DBCC9E31AFB3C87008CA17A /* Resources */,
+				6D7415181B07BA5B0053AB01 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Park-iOS";
+			productName = "Park-iOS";
+			productReference = 6DBCC9E51AFB3C87008CA17A /* 停车场.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DBCC9FC1AFB3C87008CA17A /* Park-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DBCCA0A1AFB3C87008CA17A /* Build configuration list for PBXNativeTarget "Park-iOSTests" */;
+			buildPhases = (
+				6DBCC9F91AFB3C87008CA17A /* Sources */,
+				6DBCC9FA1AFB3C87008CA17A /* Frameworks */,
+				6DBCC9FB1AFB3C87008CA17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DBCC9FF1AFB3C87008CA17A /* PBXTargetDependency */,
+			);
+			name = "Park-iOSTests";
+			productName = "Park-iOSTests";
+			productReference = 6DBCC9FD1AFB3C87008CA17A /* Park-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DBCC9DD1AFB3C87008CA17A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Dieter Kohl";
+				TargetAttributes = {
+					6DBCC9E41AFB3C87008CA17A = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = S5GTDFNMMZ;
+					};
+					6DBCC9FC1AFB3C87008CA17A = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 6DBCC9E41AFB3C87008CA17A;
+					};
+				};
+			};
+			buildConfigurationList = 6DBCC9E01AFB3C87008CA17A /* Build configuration list for PBXProject "Park-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DBCC9DC1AFB3C87008CA17A;
+			productRefGroup = 6DBCC9E61AFB3C87008CA17A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DBCC9E41AFB3C87008CA17A /* Park-iOS */,
+				6DBCC9FC1AFB3C87008CA17A /* Park-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DBCC9E31AFB3C87008CA17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBCC9F31AFB3C87008CA17A /* Main.storyboard in Resources */,
+				6DE197381AFD384E0082B825 /* assets in Resources */,
+				6DBCC9F81AFB3C87008CA17A /* LaunchScreen.xib in Resources */,
+				6DBCC9F51AFB3C87008CA17A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBCC9FB1AFB3C87008CA17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DBCC9E11AFB3C87008CA17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD8DCE41B0512DE003C8DDA /* QQLoginViewController.swift in Sources */,
+				6D7414E21B07B0400053AB01 /* QRCodeTableViewController.swift in Sources */,
+				6D7415311B08B7EA0053AB01 /* AccountTableViewController.swift in Sources */,
+				6DBCCA0E1AFB5D22008CA17A /* LoginViewController.swift in Sources */,
+				6DBCCA101AFB9FE5008CA17A /* OptionViewController.swift in Sources */,
+				6DBCCA181AFBA00D008CA17A /* ReaderOverlayView.swift in Sources */,
+				6D74152D1B07C3310053AB01 /* CIColorExtension.swift in Sources */,
+				6DD8DCE01B049400003C8DDA /* StringHelper.swift in Sources */,
+				6DBCC9F01AFB3C87008CA17A /* ViewController.swift in Sources */,
+				6DBCCA191AFBA00D008CA17A /* SwitchCameraButton.swift in Sources */,
+				6DE1973C1AFEEE840082B825 /* ContactViewController.swift in Sources */,
+				6D74152F1B07C3310053AB01 /* UIImageViewExtension.swift in Sources */,
+				6DBCC9EB1AFB3C87008CA17A /* AppDelegate.swift in Sources */,
+				6DBCCA161AFBA00D008CA17A /* QRCodeReader.swift in Sources */,
+				6DBCCA171AFBA00D008CA17A /* QRCodeViewController.swift in Sources */,
+				6DBCC9EE1AFB3C87008CA17A /* Park_iOS.xcdatamodeld in Sources */,
+				6DD8DCDE1B048BDD003C8DDA /* HRToast+UIView.swift in Sources */,
+				6DE1973E1AFF334E0082B825 /* RegisterViewController.swift in Sources */,
+				6DE1973A1AFE2CB20082B825 /* ParkOKViewController.swift in Sources */,
+				6D74152E1B07C3310053AB01 /* QRCode.swift in Sources */,
+				6DBCCA4F1AFBA546008CA17A /* MainViewController.swift in Sources */,
+				6D2184051B160A8100CC9165 /* AccountTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DBCC9F91AFB3C87008CA17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DBCCA041AFB3C87008CA17A /* Park_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DBCC9FF1AFB3C87008CA17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DBCC9E41AFB3C87008CA17A /* Park-iOS */;
+			targetProxy = 6DBCC9FE1AFB3C87008CA17A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DBCC9F11AFB3C87008CA17A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DBCC9F21AFB3C87008CA17A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DBCC9F61AFB3C87008CA17A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DBCC9F71AFB3C87008CA17A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DBCCA051AFB3C87008CA17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "3028bf72-42be-43a9-8164-14ebb60d6bd7";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		6DBCCA061AFB3C87008CA17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "";
+				PROVISIONING_PROFILE = "3028bf72-42be-43a9-8164-14ebb60d6bd7";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		6DBCCA081AFB3C87008CA17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Park-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dieterkohl/Desktop/WeChat_SDK_Sample/SDKExport,
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "停车场";
+				PROVISIONING_PROFILE = "3028bf72-42be-43a9-8164-14ebb60d6bd7";
+				SWIFT_OBJC_BRIDGING_HEADER = "Park-iOS-Bridging-Header.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		6DBCCA091AFB3C87008CA17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: PLY Mobile Tech (J2USK423UG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEPLOYMENT_LOCATION = NO;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Park-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/dieterkohl/Desktop/WeChat_SDK_Sample/SDKExport,
+					"$(PROJECT_DIR)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "停车场";
+				PROVISIONING_PROFILE = "3028bf72-42be-43a9-8164-14ebb60d6bd7";
+				SWIFT_OBJC_BRIDGING_HEADER = "Park-iOS-Bridging-Header.h";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+		6DBCCA0B1AFB3C87008CA17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Park-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Park-iOS.app/Park-iOS";
+			};
+			name = Debug;
+		};
+		6DBCCA0C1AFB3C87008CA17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Park-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Park-iOS.app/Park-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DBCC9E01AFB3C87008CA17A /* Build configuration list for PBXProject "Park-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBCCA051AFB3C87008CA17A /* Debug */,
+				6DBCCA061AFB3C87008CA17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DBCCA071AFB3C87008CA17A /* Build configuration list for PBXNativeTarget "Park-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBCCA081AFB3C87008CA17A /* Debug */,
+				6DBCCA091AFB3C87008CA17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DBCCA0A1AFB3C87008CA17A /* Build configuration list for PBXNativeTarget "Park-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DBCCA0B1AFB3C87008CA17A /* Debug */,
+				6DBCCA0C1AFB3C87008CA17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DBCC9EC1AFB3C87008CA17A /* Park_iOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DBCC9ED1AFB3C87008CA17A /* Park_iOS.xcdatamodel */,
+			);
+			currentVersion = 6DBCC9ED1AFB3C87008CA17A /* Park_iOS.xcdatamodel */;
+			path = Park_iOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6DBCC9DD1AFB3C87008CA17A /* Project object */;
+}
