@@ -2,16 +2,16 @@ This app is Parking service app.
 ================================
 There are both android and iPhone app.
 
-Login screenshot
+Login
 ================================
 ![](1.jpg)
 
-Account Signup screenshot
+Account Signup
 ================================
 
 ![](2.jpg)
 
-Wechat login screenshot
+Wechat login
 ================================
 
 ![](3.jpg)
@@ -19,33 +19,39 @@ Wechat login screenshot
 QQ login screenshot
 ================================
 
+
+![](4.jpg)
+
 Parking Main screenshot
 ================================
-![](4.jpg)
+
+![](5.jpg)
 
 QR code scan screenshot
 ================================
-![](5.jpg)
+
+![](6.jpg)
 
 Map viewr 1 screenshot
 ================================
-![](6.jpg)
+
+![](7.jpg)
 
 
 Map viewr 2 screenshot
 ================================
-![](7.jpg)
+
+![](8.jpg)
 
 
 Account Info screenshot
 ================================
-![](8.jpg)
+
+![](9.jpg)
 
 
 Contact screenshot
 ================================
-![](9.jpg)
-
 
 ![](10.jpg)
 
